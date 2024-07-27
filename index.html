@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>თიბისი კონცეპტი | TBC Concept</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img class="tbc-logo" src="./pictures/concept.jpg" alt="" />
+      <nav>
+        <div onclick="showBar(`product`)" class="dropdown-link-product btn">
+          პროდუქტები
+        </div>
+        <div onclick="showBar(`suggest`)" class="dropdown-link-suggest btn">
+          შეთავაზებები
+        </div>
+        <div onclick="showBar(`concept`)" class="dropdown-link-concept btn">
+          კონცეპტის სივრცე
+        </div>
+      </nav>
+
+      <div class="arrow-team">
+        <svg
+          class="glass-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+          />
+        </svg>
+
+        <svg
+          class="arrow-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+          />
+        </svg>
+
+        <a target="_blank" href="https://tbcconcept.ge/ge/products/kits"
+          >გამოიწერეთ ნაკრები</a
+        >
+
+        <svg
+          class="bars-staggered"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </div>
+
+      <div class="lang-title">
+        <img class="globe-icon" src="./pictures/globe-solid.svg" alt="globe" />
+        <span>ქარ</span>
+      </div>
+    </header>
+
+    <!-- header dropdown box -->
+
+    <div class="header-dropdown-bg">
+      <div class="header-dropdown-pic-block">
+        <img
+          src="https://static.tbcconcept.ge/desktop/media/jdd5wsi4.metFixed%20aspect%20ratio%20block%20[Utility].png"
+          alt=""
+        />
+
+        <div class="arrow-team">
+          <svg
+            class="arrow-svg arrow-deg-45"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+            />
+          </svg>
+
+          <a>ციფრული ბანკი</a>
+
+          <svg
+            class="bars-staggered"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <section class="sectionOne">
+        <p style="font-size: 12px">მთავარი</p>
+
+        <div class="picOne">
+          <div class="text-content-one">
+            <h1>თიბისი კონცეპტი</h1>
+            <p style="line-height: 30px">
+              პერსონალური საბანკო მომსახურება, მორგებული თქვენს
+              <br />
+              საჭიროებებსა და ინტერესებზე
+            </p>
+            <button class="follow-btn">
+              <img src="./pictures/arrow-white.svg" alt="arrow" />
+              გამოიწერეთ
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <p class="text-content">
+        გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო,ისე
+        არასაბანკო უპირატესობებით.
+      </p>
+
+      <section class="sectionTwo">
+        <h2>შეარჩიეთ ნაკრები</h2>
+        <div class="grid-container">
+          <div class="pic-cif">
+            <h1>ციფრული</h1>
+            <div class="read-more">
+              <svg
+                class="arrow-more"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                />
+              </svg>
+              <a href="#"> იხილეთ მეტი</a>
+            </div>
+          </div>
+          <div class="pic-pre">
+            <h1>პრემიუმი</h1>
+            <div class="read-more">
+              <svg
+                class="arrow-more"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                />
+              </svg>
+              <a href="#"> იხილეთ მეტი</a>
+            </div>
+          </div>
+
+          <div class="pic-360">
+            <h1>360</h1>
+            <div class="read-more">
+              <svg
+                class="arrow-more"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                />
+              </svg>
+              <a href="#"> იხილეთ მეტი</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 | counters -->
+      <section class="section-three">
+        <div class="count-box">
+          <h1>94 750</h1>
+          <p>მომხმარებელი</p>
+        </div>
+
+        <div class="count-box">
+          <h1>150+</h1>
+          <p>მომხმარებელი</p>
+        </div>
+
+        <div class="count-box">
+          <h1>130+</h1>
+          <p>მომხმარებელი</p>
+        </div>
+      </section>
+
+      <!-- section 4 | offers slider -->
+
+      <div class="heading-wrapper">
+        <h2>შეთავაზებები</h2>
+
+        <div class="arrow-team">
+          <svg
+            class="arrow-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+            />
+          </svg>
+
+          <a>ყველა შეთავაზება</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="slider-wrapper">
+          <div class="image-list">
+            <div class="image-card">
+              <img
+                src="./pictures/iveria.jpg"
+                alt="iveria-pic"
+                class="image-item"
+              />
+              <div>
+                <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                <h4>IVERIA BEACH-დაიბრუნეთ-30%</h4>
+              </div>
+            </div>
+
+            <div class="image-card">
+              <img
+                src="./pictures/tegeta.png"
+                alt="iveria-pic"
+                class="image-item"
+              />
+              <div>
+                <p>თეგეტა მოტორსი</p>
+                <h4>თეგეტა მოტორსი -50% ფასდაკლება</h4>
+              </div>
+            </div>
+
+            <div class="image-card">
+              <img
+                src="./pictures/tegeta.batumi.png"
+                alt="iveria-pic"
+                class="image-item"
+              />
+              <div>
+                <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                <h4>თეგეტა მოტორსი -ბათუმი</h4>
+              </div>
+            </div>
+
+            <div class="image-card">
+              <img
+                src="./pictures/meridien.png"
+                alt="iveria-pic"
+                class="image-item"
+              />
+              <div>
+                <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                <h4>La Meridien Batumi-15% ფასდაკლება</h4>
+              </div>
+            </div>
+
+            <div class="image-card">
+              <img
+                src="./pictures/colosseum.png"
+                alt="iveria-pic"
+                class="image-item"
+              />
+              <div>
+                <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                <h4>Colosseum Marina Hotel</h4>
+              </div>
+            </div>
+
+            <div class="image-card">
+              <img
+                src="./pictures/pulse.png"
+                alt="iveria-pic"
+                class="image-item"
+              />
+              <div>
+                <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                <h4>Pulse -15% ფასდაკლება</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+              <button
+                id="prev-slide"
+                class="slide-button material-symbols-outlined"
+              >
+                arrow_back
+              </button>
+              <button
+                id="next-slide"
+                class="slide-button material-symbols-outlined"
+              >
+                arrow_forward
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- advert section -->
+    <div class="digital-container">
+      <div class="digital-content">
+        <h2>ციფრული ბანკი</h2>
+        <p style="color: gray">
+          შეასრულეთ საბანკო ოპერაციები დისტანციურად,ციფრული ბანკის დახმარებით
+        </p>
+
+        <div class="btn-cont-store">
+          <button class="link-icons">
+            <img src="./pictures/googlePlay.svg" alt="pic" />
+          </button>
+          <button class="link-icons">
+            <img src="./pictures/download.svg" alt="pic" />
+          </button>
+
+          <button class="download-tablet-btn">
+            <svg
+              class="download-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
+              />
+            </svg>
+            DOWNLOAD
+          </button>
+        </div>
+      </div>
+      <img class="phone-pic" src="./pictures/phone.png" alt="pic" />
+    </div>
+
+    <!-- products section -->
+
+    <div class="main-container">
+      <h2>პროდუქტები</h2>
+
+      <div class="product-box">
+        <div class="image-card">
+          <img
+            src="./pictures/cifriuli.png"
+            alt="iveria-pic"
+            class="image-item"
+          />
+          <div class="product-text-content">
+            <h4>ციფრული</h4>
+            <p>
+              თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის, ვისთვისაც
+              <strong>
+                საბანკო მომსახურებით სარგებლობა ყოველდღიურობის ნაწილია,</strong
+              >
+              ვინც...
+            </p>
+          </div>
+        </div>
+
+        <!-- slider for tablet and mobile -->
+
+        <div class="image-card">
+          <img
+            src="./pictures/premiumi.png"
+            alt="iveria-pic"
+            class="image-item"
+          />
+          <div class="product-text-content">
+            <h4>პრემიუმი</h4>
+            <p>
+              თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი
+              ფორმატი-<strong>პრემიუმ ნაკრები,</strong>სხვა საბანკო და
+              არასაბანკო უპირატესობებთან ერთად...
+            </p>
+          </div>
+        </div>
+
+        <div class="image-card">
+          <img src="./pictures/360.png" alt="iveria-pic" class="image-item" />
+          <div class="product-text-content">
+            <h4>360</h4>
+            <p>
+              <strong>თიბისი კონცეპტის 360</strong>
+              ნაკრები განკუთვნილია მათთვის, ვისაც სხვა საბანკო და არასაბანკო
+              უპირატესობებთან ერთად კიდევ უფრ...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- personal banker section -->
+
+      <section class="personal-banker-box">
+        <div class="text-content-one">
+          <h1>პირადი ბანკირი</h1>
+          <p>თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში</p>
+          <button class="follow-btn">გაიგეთ მეტი</button>
+        </div>
+      </section>
+
+      <!-- Rewards slider -->
+
+      <div class="container-2">
+        <div class="slider-wrapper-2">
+          <div class="image-list-2">
+            <div class="image-card-2">
+              <img
+                src="./pictures/finance.png"
+                alt="iveria-pic"
+                class="image-item-2"
+              />
+              <div>
+                <h3>
+                  საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024
+                </h3>
+                <p>The Global Finance</p>
+              </div>
+            </div>
+
+            <div class="image-card-2">
+              <img
+                src="./pictures/euromoney.png"
+                alt="iveria-pic"
+                class="image-item-2"
+              />
+              <div>
+                <h3>
+                  საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2023
+                </h3>
+                <p>Euromoney</p>
+              </div>
+            </div>
+
+            <div class="image-card-2">
+              <img
+                src="./pictures/finance.png"
+                alt="iveria-pic"
+                class="image-item-2"
+              />
+              <div>
+                <h3>
+                  საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2021
+                </h3>
+                <p>The Global Finance</p>
+              </div>
+            </div>
+
+            <div class="image-card-2">
+              <div>
+                <img
+                  src="./pictures/banker-logo.png"
+                  alt="iveria-pic"
+                  class="image-item-2"
+                />
+              </div>
+              <div>
+                <h3>
+                  საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2021
+                </h3>
+                <p>The Global Finance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-scrollbar-2">
+            <div class="scrollbar-track-2">
+              <div class="scrollbar-thumb-2"></div>
+              <button
+                id="prev-slide-2"
+                class="slide-button-2 material-symbols-outlined"
+              >
+                arrow_back
+              </button>
+              <button
+                id="next-slide-2"
+                class="slide-button-2 material-symbols-outlined"
+              >
+                arrow_forward
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-line">
+        <img
+          class="tbc-logo-foot"
+          src="./pictures/concept.jpg"
+          alt="tbc-logo"
+        />
+        <div class="lang-title">
+          <img
+            class="globe-icon"
+            src="./pictures/globe-solid.svg"
+            alt="globe"
+          />
+          <span>ქარ</span>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-dropdown-links">
+          <h4>პროდუქტები</h4>
+          <p>ნაკრები</p>
+          <p>პერსონალური ბანკირი</p>
+        </div>
+
+        <div class="footer-dropdown-links">
+          <h4>Lifestyle</h4>
+          <p>შეთავაზებები</p>
+          <p>ღონისძიებები</p>
+        </div>
+
+        <div class="footer-dropdown-links">
+          <h4>კონცეპტის სივრცე</h4>
+          <p>ბიბლიოთეკა</p>
+          <p>კაფე</p>
+        </div>
+
+        <div class="footer-dropdown-links">
+          <h4>დაგვიკავშირდით:</h4>
+          <p class="icon-info">
+            <span class="material-symbols-outlined">call</span
+            ><span>+995 32 2 27 27</span>
+            00
+          </p>
+          <div class="icon-info">
+            <span class="material-symbols-outlined"> mail </span>
+            <p>info@tbcconcept.ge</p>
+          </div>
+
+          <div class="icon-info">
+            <span class="material-symbols-outlined"> location_on </span>
+            <p>ფილიალები</p>
+          </div>
+          <h4>სოციალური ქსელები</h4>
+          <div class="social-icons-box">
+            <a class="social-icons" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                />
+              </svg>
+            </a>
+            <a class="social-icons" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="footer-toggle">
+        <div class="footer-dropdown-toggle">
+          <a href="#">პროდუქტები</a>
+          <svg
+            class="chevron-down-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+            />
+          </svg>
+        </div>
+
+        <hr />
+
+        <div class="footer-dropdown-toggle">
+          <a href="#">LifeStyle</a>
+          <svg
+            class="chevron-down-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+            />
+          </svg>
+        </div>
+
+        <hr />
+
+        <div class="footer-dropdown-toggle">
+          <a href="#">კონცეპტის სივრცე</a>
+          <svg
+            class="chevron-down-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+            />
+          </svg>
+        </div>
+
+        <hr />
+      </div>
+
+      <div class="footer-bottom-inner">
+        <small>2024 ყველა უფლება დაცულია</small>
+        <div class="=]\">
+          <a href="#">კონფიდენციალურობა</a>
+          <a href="#">წესები და პირობები</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
