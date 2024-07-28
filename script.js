@@ -130,3 +130,50 @@ function showBar(menuId) {
     dropDownMenu.style.display = "flex";
   }
 }
+
+//  sideBar toggle
+
+function openSideBar() {
+  const barsStaggered = document.querySelector(".bars-staggered");
+  const mainContainer = document.querySelector(".main-container");
+  const digitalContainer = document.querySelector(".digital-container");
+  const productBox = document.querySelector(".product-box");
+  const personalBankerBox = document.querySelector(".personal-banker-box");
+  const containerTwo = document.querySelector(".container-2");
+  const footerToggle = document.querySelector(".footer-toggle");
+  const footerLine = document.querySelector(".footer-line");
+  const closeSvg = document.querySelector(".closeSvg");
+
+  mainContainer.style.display = "none";
+  digitalContainer.style.display = "none";
+  productBox.style.display = "none";
+  personalBankerBox.style.display = "none";
+  containerTwo.style.display = "none";
+  footerToggle.style.display = "block";
+  barsStaggered.style.display = "none";
+  closeSvg.style.display = "block";
+  footerToggle.style.height = "100vh";
+  footerLine.style.display = "none";
+}
+
+function closeSideBar() {
+  const barsStaggered = document.querySelector(".bars-staggered");
+  const mainContainer = document.querySelector(".main-container");
+  const digitalContainer = document.querySelector(".digital-container");
+  const productBox = document.querySelector(".product-box");
+  const personalBankerBox = document.querySelector(".personal-banker-box");
+  const containerTwo = document.querySelector(".container-2");
+  const footerToggle = document.querySelector(".footer-toggle");
+  const footerLine = document.querySelector(".footer-line");
+  const closeSvg = document.querySelector(".closeSvg");
+
+  mainContainer.style.display = "inherit";
+  digitalContainer.style.display = "inherit";
+  productBox.style.display = "inherit";
+  personalBankerBox.style.display = "inherit";
+  containerTwo.style.display = "inherit";
+  footerToggle.style.display = "inherit";
+  barsStaggered.style.display = "inherit";
+  closeSvg.style.display = "none";
+  footerLine.style.display = "inherit";
+}
